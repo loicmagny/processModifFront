@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+
+
+  <main>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="soldesete.html">Soldes d'été</a></li>
+      <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+      <li><a href="git.html">Git</a></li>
+      <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+      <li><a href="sass.html">Tutoriel SCSS</a></li>
+      <li><a href="prestashop.html">Installation Prestashop</a></li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Les fichiers JS</div>
+            <div class="collapsible-body"><span>
+                <ul>
+                  <li><a href="responsive.html">Page d'accueil</a></li>
+                  <li><a>Menu desktop / Mobile</a></li>
+                  <li><a>Page Personnalisation</a></li>
+                  <li><a>Page Collections</a></li>
+                  <li><a>Traductions</a></li>
+                  <li><a>Conditions Générales de vente</a></li>
+                  <li><a>Page Inspirations</a></li>
+                  <li><a>Page Promotions</a></li>
+                  <li><a>Page Produit</a></li>
+                </ul>
+              </span></div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    <section id="prestashop-tutorial">
+      <h2>Installation d'un PrestaShop existant en local</h2>
+      <ol>
+        <li>
+          Tout d'abord, vous aurez besoin d'un environnement de développement local comme <code>MAMP</code> (pour Mac),
+          <code>WAMP</code> (pour Windows), ou <code>LAMP</code> (pour Linux). Téléchargez et installez le logiciel
+          correspondant à votre système d'exploitation.
+        </li>
+        <li>
+          Démarrez le serveur local et notez l'adresse du serveur (généralement <code>localhost</code>) et le numéro de
+          port.
+        </li>
+        <li>
+          Créez une nouvelle base de données via l'interface de PhpMyAdmin (ou équivalent) fournie avec votre serveur
+          local. Notez le nom de la base de données, l'utilisateur et le mot de passe.
+        </li>
+        <li>
+          Importez la sauvegarde de la base de données de votre site PrestaShop dans la base de données que vous venez
+          de créer. Vous pouvez le faire en utilisant l'option <code>Import</code> dans PhpMyAdmin.
+        </li>
+        <li>
+          Extrayez la sauvegarde des fichiers de votre site PrestaShop dans le dossier htdocs (ou www pour WAMP) de
+          votre serveur local. Assurez-vous que les fichiers sont dans un sous-dossier, par exemple
+          <code>localhost:8888/my-prestashop</code>.
+        </li>
+        <li>
+          Modifiez le fichier <code>settings.inc.php</code> dans le dossier <code>/config</code> de votre PrestaShop
+          local. Changez les valeurs de <code>_DB_NAME_</code>, <code>_DB_USER_</code>, <code>_DB_PASSWD_</code> pour
+          correspondre à votre base de données locale.
+        </li>
+        <li>
+          Ouvrez votre navigateur et accédez à votre site PrestaShop via l'URL de votre serveur local, par exemple
+          <code>http://localhost:8888/my-prestashop</code>.
+        </li>
+        <li>
+          Si vous rencontrez des problèmes d'URL (par exemple, le site essaie de rediriger vers l'URL en direct),
+          vérifiez la table <code>ps_configuration</code> dans votre base de données et recherchez les valeurs
+          <code>PS_SHOP_DOMAIN</code> et <code>PS_SHOP_DOMAIN_SSL</code>. Assurez-vous qu'ils sont définis sur votre
+          adresse de serveur local.
+        </li>
+      </ol>
+    </section>
+
+  </main>
+  <footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </footer>
+</body>
+
+</html>

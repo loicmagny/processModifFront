@@ -1,0 +1,246 @@
+header,
+main,
+footer {
+    padding-left: 310px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+code {
+    background-color: #eee
+}
+
+.vscode-img-explanation {
+    width: 225px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.vs-code-ordered-steps {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 0;
+}
+
+img.vscode-steps-img {
+    height: 629px;
+    width: 225px;
+}
+
+.vs-code-step-list.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vscode-img-explanation-span {
+    width: 225px !important;
+    display: flex;
+    margin-left: 0;
+}
+
+.vscode-terminal-compile-done {
+    display: flex;
+    flex-direction: column;
+}
+
+.vscode-obj-responsive,
+.vscode-terminal,
+.vscode-terminal-compile,
+.filezilla {
+    width: 1000px;
+}
+
+.vscode-explanation {
+    width: auto !important;
+    margin-left: 0 !important;
+}
+
+.vsc-icon-text,
+.fz-icon-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fz-interface-desc {
+    display: flex;
+}
+
+.fz-interface-side {
+    margin: 0 130px;
+}
+
+.final-steps-list,
+.vscode-steps-list {
+    padding-left: 35px !important;
+}
+
+.final-steps-step,
+.vscode-steps-step {
+    list-style-type: disclosure-closed !important;
+}
+
+code {
+    width: fit-content;
+}
+
+.vscode-status-step {
+    display: flex;
+    flex-direction: column;
+}
+
+#js-jquery-tutorial {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: #666;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    ol {
+        counter-reset: item;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+
+        li {
+            margin-bottom: 10px;
+
+            &::before {
+                content: counter(item) ". ";
+                counter-increment: item;
+                color: #999;
+            }
+        }
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    a {
+        color: #0088cc;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    code {
+        font-family: Monaco, monospace;
+        font-size: 0.9em;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 2px 4px;
+        color: #666;
+    }
+}
+
+#scss-tutorial {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        color: #666;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    ol {
+        counter-reset: item;
+        margin-left: 20px;
+
+        li {
+            margin-bottom: 10px;
+
+            &::before {
+                content: counter(item) ". ";
+                counter-increment: item;
+                color: #999;
+            }
+        }
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    a {
+        color: #0088cc;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    code {
+        font-family: Monaco, monospace;
+        font-size: 0.9em;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 2px 4px;
+        color: #666;
+    }
+}
+
+#prestashop-tutorial {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        counter-reset: item;
+        margin-left: 20px;
+
+        li {
+            margin-bottom: 10px;
+
+            &::before {
+                content: counter(item) ". ";
+                counter-increment: item;
+                color: #999;
+            }
+        }
+    }
+
+    code {
+        font-family: Monaco, monospace;
+        font-size: 0.9em;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 2px 4px;
+        color: #666;
+    }
+}

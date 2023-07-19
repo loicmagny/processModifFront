@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+
+
+  <main>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="soldesete.html">Soldes d'été</a></li>
+      <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+      <li><a href="git.html">Git</a></li>
+      <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+      <li><a href="sass.html">Tutoriel SCSS</a></li>
+      <li><a href="prestashop.html">Installation Prestashop</a></li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Les fichiers JS</div>
+            <div class="collapsible-body"><span>
+                <ul>
+                  <li><a href="responsive.html">Page d'accueil</a></li>
+                  <li><a>Menu desktop / Mobile</a></li>
+                  <li><a>Page Personnalisation</a></li>
+                  <li><a>Page Collections</a></li>
+                  <li><a>Traductions</a></li>
+                  <li><a>Conditions Générales de vente</a></li>
+                  <li><a>Page Inspirations</a></li>
+                  <li><a>Page Promotions</a></li>
+                  <li><a>Page Produit</a></li>
+                </ul>
+              </span></div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    <h1>Utilisation de Git pour le projet</h1>
+    <section id="git-setup">
+      <ol>
+        <li>
+          Pour commencer, il est nécessaire d'avoir un compte <a href="https://gitlab.com">Gitlab</a>.
+        </li>
+        <li>
+          Être invité sur le projet.
+        </li>
+        <li>
+          Effectuer un <code>git clone</code> du projet.
+        </li>
+        <li>
+          Créer une branche selon le format suivant -> prénom/tâche/fichier.
+          Exemple: <code>loic/traduction/rse</code>.
+        </li>
+        <li>Une fois terminé, effectuer un <code>git push</code> puis un <code>git merge</code> de la branche vers la
+          branche principale.
+        </li>
+        <li>Il faut résoudre les conflits s'il y en a. Les conflits sur theme.js ou theme.css peuvent être ignorés ->
+          les fichiers sont régénérés à chaque modification css/js.</li>
+        <li>Une fois le merge effectué et les conflits résolus, les fichiers peuvent être mis sur le serveur.</li>
+      </ol>
+    </section>
+    <section id="git-basics">
+      <h2>Commandes basiques de Git</h2>
+      <ul>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git status</code> permet d'afficher des informations telles que la branche en cours, les fichiers
+          modifiés, etc. Cela est utile pour connaître l'état actuel du projet. <p>Pour plus d'informations, consultez
+            la <a href="https://git-scm.com/docs/git-status">documentation de git status</a></p>
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git add</code> permet d'ajouter des fichiers à la préparation du commit. <p>Utilisez <code>git add
+              .</code> pour ajouter tous les fichiers modifiés.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-add">documentation de git
+              add</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git commit</code> permet de créer un nouveau commit avec les fichiers ajoutés. <p>Par exemple, <code>git
+              commit -m "Ajout de nouvelles fonctionnalités"</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-commit">documentation de git
+              commit</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git push</code> permet d'envoyer les commits locaux vers le dépôt distant. <p>Par exemple, <code>git
+              push origin master</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-push">documentation de git
+              push</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git merge</code> permet de fusionner une branche avec une autre branche. <p>Par exemple, <code>git merge
+              feature-branch</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-merge">documentation de git
+              merge</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git stash</code> permet de sauvegarder temporairement les modifications non validées. <p>Par exemple,
+            <code>git stash save "Correction de bugs"</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-stash">documentation de git
+              stash</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git pull</code> permet de récupérer les derniers commits du dépôt distant et de les fusionner avec la
+          branche locale. <p>Par exemple, <code>git pull origin master</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-pull">documentation de git
+              pull</a></p>.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          <code>git fetch</code> permet de récupérer les derniers commits du dépôt distant sans les fusionner avec la
+          branche locale. <p>Par exemple, <code>git fetch origin</code>.</p>
+          <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/docs/git-fetch">documentation de git
+              fetch</a></p>.
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </footer>
+</body>
+
+</html>

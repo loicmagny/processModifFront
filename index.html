@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  
+  
+  
+  <main>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="soldesete.html">Soldes d'été</a></li>
+      <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+      <li><a href="git.html">Git</a></li>
+      <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+      <li><a href="sass.html">Tutoriel SCSS</a></li>
+      <li><a href="prestashop.html">Installation Prestashop</a></li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Les fichiers JS</div>
+            <div class="collapsible-body"><span>
+                <ul>
+                  <li><a href="responsive.html">Page d'accueil</a></li>
+                  <li><a>Menu desktop / Mobile</a></li>
+                  <li><a>Page Personnalisation</a></li>
+                  <li><a>Page Collections</a></li>
+                  <li><a>Traductions</a></li>
+                  <li><a>Conditions Générales de vente</a></li>
+                  <li><a>Page Inspirations</a></li>
+                  <li><a>Page Promotions</a></li>
+                  <li><a>Page Produit</a></li>
+                </ul>
+              </span></div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    <h1>Processus pour les modifications front</h1>
+    <section id="setup">
+      <h2>Ouvrir le projet et préparer le terrain</h2>
+      <ul>
+        <li>
+          Ouvrir un terminal (En haut de la fenêtre de l'éditeur -> terminal -> nouveau terminal)
+        </li>
+        <li>
+          Le terminal devrait s'ouvrir à la racine du projet
+        </li>
+        <li>
+          Pour la suite, entrez chaque commande l'une après l'autre:
+          <ol>
+            <li>
+              <code>cd themes\classic-rocket-child\_dev\ </code> puis Entrée</li>
+            <li><code>npm install </code>, puis Entrée, ensuite patientez jusqu'à ce qu'il ait fini</li>
+        </li>
+      </ul>
+    </section>
+    <section id="work">
+      <h2>Commencer à travailler</h2>
+      <p>
+        Avant de commencer à effectuer des modifications dans les fichiers CSS/JS,
+      </p>
+      <p>
+        Dans le dossier _dev du thème:
+      </p>
+      <ul>
+        <li style="padding: 10px; margin: 10px;">
+          Exécutez la commande <code>npm run fulldebug</code> pour lancer webpack sass et les autres outils. </li>
+        <li style="padding: 10px; margin: 10px;">
+          À chaque modification JS ou CSS, Node.js va recompiler les fichiers JS et CSS pour créer un fichier <code>theme.js</code> et <code>theme.css</code> dans le dossier <code>assets</code> du thème.
+          <p>Pour une modification dans un fichier <code>tpl</code> (template), cela n'est pas nécessaire.</p>
+        </li>
+        <li>Le travail se déroule dans le dossier _dev du thème classic-rocket-child.</li>
+        <li>Pour ce qui est des images, il faut penser à les importer sur le serveur dans les dossiers prévus à cet effet.</li>
+        <li style="padding: 10px; margin: 10px;">Une fois que tout est prêt en local et que les fichiers sont sur le repo git (branche main), ces fichiers doivent être importés via Filezilla dans le dossier assets du thème de la preprod. Ensuite, lorsque tout est prêt sur la preprod, on les importe sur la prod.</li>
+        <li style="padding: 10px; margin: 10px;">
+          Pour la preprod, il faut importer les fichiers dans les dossiers suivants :
+          <code>var/www/preprod.sevirakids.com/themes/classic-rocket-child/assets/css</code> et
+          <code>var/www/preprod.sevirakids.com/themes/classic-rocket-child/assets/js</code>
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          Uniquement sur la prod, après avoir importé les fichiers, il faut vider le cache de PrestaShop.
+        </li>
+        <li style="padding: 10px; margin: 10px;">
+          Pour cela, rendez-vous dans le Back-Office, puis allez dans <code>Paramètres Avancés > Performances > Vider le cache</code> (en haut de la page).
+        </li>
+        <li style="padding: 10px; margin: 10px;">Vous pouvez également supprimer le dossier <code>var/www/seviraprod/var/cache</code> sur le serveur, mais je déconseille cette méthode car elle est beaucoup plus longue que celle via le BO.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </footer>
+</body>
+
+</html>

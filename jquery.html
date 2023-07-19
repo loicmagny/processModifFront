@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+
+
+  <main>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="soldesete.html">Soldes d'été</a></li>
+      <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+      <li><a href="git.html">Git</a></li>
+      <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+      <li><a href="sass.html">Tutoriel SCSS</a></li>
+      <li><a href="prestashop.html">Installation Prestashop</a></li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Les fichiers JS</div>
+            <div class="collapsible-body"><span>
+                <ul>
+                  <li><a href="responsive.html">Page d'accueil</a></li>
+                  <li><a>Menu desktop / Mobile</a></li>
+                  <li><a>Page Personnalisation</a></li>
+                  <li><a>Page Collections</a></li>
+                  <li><a>Traductions</a></li>
+                  <li><a>Conditions Générales de vente</a></li>
+                  <li><a>Page Inspirations</a></li>
+                  <li><a>Page Promotions</a></li>
+                  <li><a>Page Produit</a></li>
+                </ul>
+              </span></div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <section id="js-jquery-tutorial">
+      <h2>Tutoriel détaillé sur JavaScript et jQuery</h2>
+      <h3>JavaScript</h3>
+      <ol>
+        <li>
+          JavaScript est un langage de programmation à haut niveau, interprété, utilisé pour rendre les pages Web
+          interactives.
+        </li>
+        <li>
+          En JavaScript, vous pouvez déclarer des variables avec <code>let</code>, <code>const</code>, ou
+          <code>var</code>. Par exemple : <code>let myVariable = 5;</code>
+        </li>
+        <li>
+          Les fonctions sont définies avec le mot-clé <code>function</code> ou en utilisant les fonctions fléchées ES6.
+          Par exemple : <code>const myFunction = () => {};</code>
+        </li>
+        <li>
+          Les Promesses et async/await sont utilisés pour gérer les opérations asynchrones. Par exemple : <code>const
+            data = await fetch('https://api.example.com');</code>
+        </li>
+        <li>
+          JavaScript supporte les structures de contrôle comme <code>if</code>, <code>for</code>, <code>while</code>,
+          etc.
+        </li>
+        <li>
+          Les objets et les tableaux sont des structures de données couramment utilisées en JavaScript. Par exemple :
+          <code>let obj = { key: 'value' };</code>
+        </li>
+        <li>
+          Les modules ES6 vous permettent de diviser votre code en modules réutilisables. Par exemple, <code>import
+            myModule from './myModule.js';</code>
+        </li>
+        <li>
+          Les générateurs JavaScript sont des fonctions spéciales qui peuvent être arrêtées et reprises. Elles sont
+          définies avec le mot-clé <code>function*</code>. Par exemple : <code>function* myGenerator() { yield 'value';
+            }</code>
+        </li>
+        <li>
+          Les classes JavaScript permettent de définir des modèles pour la création d'objets et prennent en charge
+          l'héritage basé sur les prototypes. Par exemple : <code>class MyClass { constructor() { this.myProperty =
+            'value'; }}</code>
+        </li>
+        <li>
+          La décomposition (destructuring) est une fonctionnalité ES6 qui permet d'extraire des données de tableaux ou
+          d'objets en utilisant une syntaxe qui correspond à la construction des tableaux et des objets. Par exemple :
+          <code>const { myProperty } = myObject;</code>
+        </li>
+        <li>
+          Les fonctions de rappel (callbacks) et les événements personnalisés permettent de créer une interaction
+          complexe entre les différents composants de votre application.
+        </li>
+      </ol>
+      <h3>jQuery</h3>
+      <ol>
+        <li>
+          jQuery est une bibliothèque JavaScript qui facilite la manipulation du DOM, la gestion des événements, et les
+          animations.
+        </li>
+        <li>
+          Vous pouvez sélectionner des éléments avec jQuery de la même manière que vous le feriez avec CSS. Par exemple
+          : <code>$('.myClass');</code>
+        </li>
+        <li>
+          Vous pouvez manipuler le contenu et les attributs d'éléments avec des méthodes comme <code>.text()</code>,
+          <code>.html()</code>, et <code>.attr()</code>.
+        </li>
+        <li>
+          Les méthodes d'événements jQuery, comme <code>.click()</code> ou <code>.on('click')</code>, vous permettent de
+          gérer les événements d'interface utilisateur.
+        </li>
+        <li>
+          jQuery offre également des méthodes pour les animations, comme <code>.hide()</code>, <code>.show()</code>, et
+          <code>.toggle()</code>.
+        </li>
+        <li>
+          Les objets jQuery peuvent être stockés dans des variables pour être réutilisés. Par exemple : <code>const
+            $myElement = $('#myElement');</code>
+        </li>
+        <li>
+          jQuery comprend une méthode <code>.ajax()</code> pour faire des requêtes HTTP asynchrones.
+        </li>
+        <li>
+          jQuery fournit la méthode <code>.each()</code> pour itérer sur des collections de DOM ou tout tableau de
+          données.
+        </li>
+        <li>
+          Les méthodes de manipulation du DOM de jQuery, comme <code>.append()</code>, <code>.remove()</code>,
+          <code>.css()</code>, vous permettent de changer l'apparence et la structure de vos pages Web dynamiquement.
+        </li>
+        <li>
+          La méthode <code>.animate()</code> vous permet de créer des animations personnalisées.
+        </li>
+        <li>
+          jQuery UI est une bibliothèque supplémentaire construite sur jQuery, qui fournit une série de widgets,
+          d'interactions et d'effets d'animation.
+        </li>
+        <li>
+          jQuery prend en charge les promesses et les deferreds, qui sont des mécanismes pour gérer des valeurs qui
+          peuvent ne pas être disponibles encore.
+        </li>
+      </ol>
+      <p>Pour plus d'informations et de détails, vous pouvez consulter la <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentation officielle de JavaScript</a> et
+        la <a href="https://jquery.com/">documentation officielle de jQuery</a>.</p>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </footer>
+</body>
+
+</html>

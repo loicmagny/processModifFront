@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <main>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="soldesete.html">Soldes d'été</a></li>
+      <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+      <li><a href="git.html">Git</a></li>
+      <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+      <li><a href="sass.html">Tutoriel SCSS</a></li>
+      <li><a href="prestashop.html">Installation Prestashop</a></li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Les fichiers JS</div>
+            <div class="collapsible-body"><span>
+                <ul>
+                  <li><a href="responsive.html">Page d'accueil</a></li>
+                  <li><a>Menu desktop / Mobile</a></li>
+                  <li><a>Page Personnalisation</a></li>
+                  <li><a>Page Collections</a></li>
+                  <li><a>Traductions</a></li>
+                  <li><a>Conditions Générales de vente</a></li>
+                  <li><a>Page Inspirations</a></li>
+                  <li><a>Page Promotions</a></li>
+                  <li><a>Page Produit</a></li>
+                </ul>
+              </span></div>
+          </li>
+        </ul>
+      </li>
+    
+    </ul>
+  
+    <section id="scss-tutorial">
+      <h2>Tutoriel rapide sur SCSS</h2>
+      <ol>
+        <li>
+          Le SCSS (Sassy CSS) est une extension de CSS qui ajoute de nouvelles fonctionnalités et améliorations aux
+          capacités existantes de CSS.
+        </li>
+        <li>
+          Vous pouvez déclarer des variables en SCSS avec le signe <code>$</code>. Par exemple :
+          <p>
+            <code>$primary-color: #ff6347;</code>
+          </p>
+          Ces variables peuvent ensuite être utilisées dans votre code SCSS.
+        </li>
+        <li>
+          SCSS supporte les imbrications, ce qui signifie que vous pouvez définir des styles pour des éléments enfants
+          directement à l'intérieur des règles de leurs parents. Par exemple :
+          <p>
+            <code>
+              nav {<br>
+              &nbsp;&nbsp;background-color: $primary-color;<br>
+              &nbsp;&nbsp;a {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+              &nbsp;&nbsp;}<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          SCSS offre le support des opérateurs mathématiques. Vous pouvez utiliser des opérations arithmétiques comme
+          l'addition, la soustraction, la multiplication et la division dans vos styles. Par exemple :
+          <p>
+            <code>
+              .container {<br>
+              &nbsp;&nbsp;width: 100%/3;<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          Avec SCSS, vous pouvez créer des mixins, qui sont des blocs de code réutilisables. Vous pouvez les créer avec
+          <code>@mixin</code> et les utiliser avec <code>@include</code>. Par exemple :
+          <p>
+            <code>
+              @mixin reset-list {<br>
+              &nbsp;&nbsp;margin: 0;<br>
+              &nbsp;&nbsp;padding: 0;<br>
+              &nbsp;&nbsp;list-style: none;<br>
+              }<br>
+              <br>
+              ul {<br>
+              &nbsp;&nbsp;@include reset-list;<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          Les mixins peuvent également prendre des arguments, ce qui les rend encore plus flexibles. Par exemple :
+          <p>
+            <code>
+              @mixin border-radius($radius) {<br>
+              &nbsp;&nbsp;border-radius: $radius;<br>
+              }<br>
+              <br>
+              .box {<br>
+              &nbsp;&nbsp;@include border-radius(10px);<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          SCSS fournit aussi les boucles, comme <code>@for</code>, <code>@each</code>, <code>@while</code>, qui sont
+          très utiles pour générer des styles répétitifs. Par exemple :
+          <p>
+            <code>
+              @for $i from 1 through 3 {<br>
+              &nbsp;&nbsp;.col-#{$i} { width: 100%/$i; }<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          Le SCSS permet également l'utilisation de fonctions. Par exemple, vous pouvez utiliser la fonction
+          <code>lighten</code> pour éclaircir une couleur :
+          <p>
+            <code>
+              nav {<br>
+              &nbsp;&nbsp;background-color: lighten($primary-color, 10%);<br>
+              }
+            </code>
+          </p>
+        </li>
+        <li>
+          SCSS comprend un système de gestion des erreurs avec <code>@warn</code> et <code>@error</code>. Ces directives
+          permettent d'afficher des avertissements ou de générer des erreurs lors de la compilation du SCSS.
+          <p>
+            <code>
+              @mixin assert-integer($value) {<br>
+              &nbsp;&nbsp;if (type-of($value) != integer) {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;@error "Expected an integer value, but got #{type-of($value)}.";<br>
+              &nbsp;&nbsp;}<br>
+              }
+            </code>
+          </p>
+        </li>
+      </ol>
+      <p>Pour plus d'informations et de détails, vous pouvez consulter la <a
+          href="https://sass-lang.com/documentation">documentation officielle de SCSS</a>.</p>
+    </section>
+
+
+  </main>
+  <footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </footer>
+</body>
+
+</html>

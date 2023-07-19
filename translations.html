@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+
+        </style>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+
+
+        <main>
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="soldesete.html">Soldes d'été</a></li>
+                <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+                <li><a href="git.html">Git</a></li>
+                <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+                <li><a href="sass.html">Tutoriel SCSS</a></li>
+                <li><a href="prestashop.html">Installation Prestashop</a></li>
+                <li>
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header">Les fichiers JS</div>
+                            <div class="collapsible-body"><span>
+                                    <ul>
+                                        <li><a href="responsive.html">Page d'accueil</a></li>
+                                        <li><a>Menu desktop / Mobile</a></li>
+                                        <li><a>Page Personnalisation</a></li>
+                                        <li><a>Page Collections</a></li>
+                                        <li><a>Traductions</a></li>
+                                        <li><a>Conditions Générales de vente</a></li>
+                                        <li><a>Page Inspirations</a></li>
+                                        <li><a>Page Promotions</a></li>
+                                        <li><a>Page Produit</a></li>
+                                    </ul>
+                                </span></div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <h1>Comment faire les traductions</h1>
+            <section id="translation-parent">
+                <div>
+                    <h2>Comment traduire le texte suivant</h2>
+                    <img src="assets/img/Capture d'écran 2023-07-19 160115.png" />
+                </div>
+                <div>
+                    <p>Les textes simples, sans éléments en bold, italic, ou souligné. Autrement dit, du texte que l'on
+                        qualifiera de simple peut être enregistré dans un attribut du tableau d'objet Locale présent
+                        dans locales.js</p>
+                    <p>Prenons le texte suivant : </p>
+                    <img src="assets/img/Capture d'écran 2023-07-19 160344.png" />
+                    <p>La traduction du premier paragraphe se trouve dans
+                        Locale[fr]['pages']['termsofSalesPage'].topText.textTop</p>
+                    <p>Le second se trouve donc dans Locale[fr]['pages']['termsofSalesPage'].topText.textBottom</p>
+                    <img src="assets/img/Capture d'écran 2023-07-19 160710.png" />
+                    <span>locales.js</span>
+                </div>
+                <div>
+                    <img src="assets/img/Capture d'écran 2023-07-19 161611.png" />
+                    <p>Pour ce texte là, afin de garder la mise en forme, il faut créer un objet qui contiendra les
+                        différentes traductions (le texte avec un underline, ou en bold etc)</p>
+                    <p>On le note du coup comme ça</p>
+                    <img src="assets/img/Capture d'écran 2023-07-19 161806.png">
+                        <p>Et on y accède le manière suivante: Locale[fr]['pages']['termsofSalesPage'].topText.contact.title</p>
+                        <p>Ou encore</p>
+                        <p>Locale[fr]['pages']['termsofSalesPage'].topText.contact.phoneBold</p>
+                        <p>Ceci nous permet de mettre la traduction dans une balise que l'on pourra styliser à volonté</p>
+                        <label>Oui, c'est fastidieux</label>
+                </div>
+            </section>
+
+            </section>
+        </main>
+        <footer>
+            <!--JavaScript at end of body for optimized loading-->
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script src="assets/js/script.js" defer></script>
+        </footer>
+    </body>
+
+</html>

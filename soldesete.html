@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <main>
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="soldesete.html">Soldes d'été</a></li>
+            <li><a href="terminal.html">Commandes basiques du terminal</a></li>
+            <li><a href="git.html">Git</a></li>
+            <li><a href="jquery.html">Tutoriel jQuery / Javascript</a></li>
+            <li><a href="sass.html">Tutoriel SCSS</a></li>
+            <li><a href="prestashop.html">Installation Prestashop</a></li>
+            <li>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Les fichiers JS</div>
+                        <div class="collapsible-body"><span>
+                                <ul>
+                                    <li><a href="responsive.html">Page d'accueil</a></li>
+                                    <li><a>Menu desktop / Mobile</a></li>
+                                    <li><a>Page Personnalisation</a></li>
+                                    <li><a>Page Collections</a></li>
+                                    <li><a>Traductions</a></li>
+                                    <li><a>Conditions Générales de vente</a></li>
+                                    <li><a>Page Inspirations</a></li>
+                                    <li><a>Page Promotions</a></li>
+                                    <li><a>Page Produit</a></li>
+                                </ul>
+                            </span></div>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+        <h1>Instructions pour modifier l'image pour les soldes d'été</h1>
+        <div>
+            <p class="vsc-icon-text">Ouvrir VS Code <img src="assets/img/vscode.png"
+                    style="width: 25px; height: 25px; margin-left: 10px;" alt="icône Visual Studio Code" /></p>
+            <p>Ouvrir le dossier du projet situé dans: <code>/Documents/Dev/www/SeviraKidsV3</code></p>
+        </div>
+        <h2>Dans VS Code : </h2>
+        <div class="vs-code-step-list row">
+            <div class="vs-code-ordered-steps">
+                <div class="col l3 vscode-explanation"><span class="vscode-img-explanation-span">Ouvrir le dossier
+                        themes</span></div>
+                <div class="col l3 vscode-explanation"><span class="vscode-img-explanation-span">Ouvrir le dossier
+                        classic-rocket-child</span>
+                </div>
+                <div class="col l3 vscode-explanation"><span class="vscode-img-explanation-span">Ouvrir le dossier
+                        _dev</span></div>
+                <div class="col l3 vscode-explanation"><span class="vscode-img-explanation-span">Ouvrir le dossier
+                        js puis le fichier
+                        responsive.js (double clic)</span></div>
+            </div>
+            <div class="vs-code-ordered-steps">
+                <div>
+                    <div class="vscode-img-explanation col l3">
+                        <img class="vscode-steps-img" src="assets/img/vscode-explorer-themes.jpg"
+                            alt="icône Visual Studio Code" />
+                    </div>
+                </div>
+                <div>
+                    <div class="vscode-img-explanation col l3">
+                        <img class="vscode-steps-img" src="assets/img/vscode-explorer-themes-child.jpg"
+                            alt="icône Visual Studio Code" />
+                    </div>
+                </div>
+                <div>
+                    <div class="vscode-img-explanation col l3">
+                        <img class="vscode-steps-img" src="assets/img/vscode-explorer-themes-child-dev.jpg"
+                            alt="icône Visual Studio Code" />
+                    </div>
+                </div>
+                <div>
+                    <div class="vscode-img-explanation col l3">
+
+
+                        <img class="vscode-steps-img" src="assets/img/vscode-explorer-themes-child-dev-responsive.jpg"
+                            alt="icône Visual Studio Code" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Dans le terminal :</h2>
+            <p>Ouvrez un nouveau terminal</p>
+            <ul>
+                <li><img class="vscode-terminal" src="assets/img/vscode-terminal.jpg" /></li>
+                <li><img class="vscode-terminal" src="assets/img/vscode-terminal-new.jpg" /></li>
+                <li><img class="vscode-terminal" src="assets/img/vscode-terminal-new-display.jpg" /></li>
+            </ul>
+        </div>
+        <div>
+            <p>Tapez ou collez les commandes suivantes (appuyez sur entrée après chaque ligne) : </p>
+            <ul>
+                <li class="vscode-status-step"><code>git status</code> (Attendez la fin de l'exécution de la commande)
+                    <img class="vscode-terminal-compile" src="assets/img/vscode-vm-repo-status.png" />
+                    <p>Si la console affiche ceci, vous pouvez sauter l'étape du <code>git pull</code></p>
+                </li>
+                <li><code>git pull</code> (Attendez la fin de l'exécution de la commande)</li>
+                <li><code>cd themes/classic-rocket-child/_dev</code></li>
+                <li><code>npm run fulldebug</code></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Dans responsive.js</h2>
+            <div><img class="vscode-obj-responsive" src="assets/img/vscode-objective-responsive.jpg" /></div>
+            <p>Pour effectuer la modification: </p>
+            <ol class="vscode-steps-list">
+                <li class="vscode-steps-step">Retirez les <code>//</code> à la ligne 152</li>
+                <li class="vscode-steps-step">Ajoutez des <code>//</code> à la ligne 150</li>
+                <li class="vscode-steps-step">Sauvegardez la modification (<code>Ctrl + S </code>)</li>
+                <li class="vscode-steps-step">Vérifiez dans le terminal que les fichiers sont compilés (attendez un
+                    peu si la compilation
+                    n'est pas terminée)</li>
+                <li class="vscode-terminal-compile-done vscode-steps-step">compilation du JS terminée<img
+                        class="vscode-terminal-compile" src="assets/img/vscode-terminal-compile-done-js.png" /></li>
+                <li class="vscode-terminal-compile-done vscode-steps-step">compilation du CSS terminée<img
+                        class="vscode-terminal-compile" src="assets/img/vscode-terminal-compile-done-css.jpg" />
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>Exporter les fichiers sur le serveur</h2>
+            <p class="fz-icon-text">Ouvrez FileZilla <img style="width: 25px; height: 25px; margin-left: 10px;"
+                    src="assets/img/icon-filezilla.png" />
+            </p>
+            <p>Connectez-vous au serveur en utilisant les informations contenues dans <code>log.txt</code> (sur le
+                bureau de la VM)
+            </p>
+            <div>Une fois connecté: </div>
+            <div>
+                <img class="filezilla" src="assets/img/filezilla-interface-desc.png">
+            </div>
+            <div class="fz-interface-desc">
+                <div class="fz-interface-side">
+                    Côté <span style="color: red;">rouge</span>: Ordinateur local
+
+                </div>
+                <div class="fz-interface-side">
+                    Côté <span style="color: blue;">bleu</span>: Serveur
+                </div>
+            </div>
+            <div class="fz-interface-detail">
+                <h5>Explications</h5>
+                <ol>
+                    <li>
+                        Chemin absolu: L'endroit précis où l'on se trouve dans la machine
+                    </li>
+                    <li>
+                        Arborescence globale: L'ensemble des fichiers de la machine
+                    </li>
+                    <li>
+                        Arborescence détaillée: Le contenu d'un dossier
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <p>Avant de mettre les modifications en ligne sur la prod, on va les tester sur la preprod</p>
+                <p>Dans le dossier <code>preprod.sevirakid.com</code>: </p>
+                <p>Faire glisser les fichiers css et js situé dans
+                    <code>themes/classic-rocket-child/assets</code> de la
+                    machine locale vers le même dossier <code>themes/classic-rocket-child/assets</code> sur le
+                    serveur (cf
+                    image), confirmer le remplacement des fichiers
+                    <img class="filezilla" src="assets/img/filezilla-file-transfer.png"></p>
+            </div>
+            <div>
+                <h3>Mettre les modifications en prod</h3>
+                <p>Une fois que les changements ont été testés et validés sur la preprod, on peut les mettre en
+                    ligne sur la prod.</p>
+                <p>Pour ce faire il suffit de répéter l'opération décrite au dessus mais dans le dossier
+                    <code>seviraprod</code> situé dans <code>var/www/</code> sur le serveur</p>
+                <p><span style="font-weight: 800;text-decoration: underline;">Astuce</span>: Dans la barre contenant
+                    le chemin sur Filezilla, côté serveur, il est
+                    possible de remplacer <code>preprod.sevirakids.com</code> par <code>seviraprod</code></p>
+                <p>Transformer <code>var/www/preprod.sevirakids.com/themes/classic-rocket-child/assets/</code> en
+                    <code>var/www/seviraprod/themes/classic-rocket-child/assets/</code></p>
+                <p>Permet de se déplacer instantanément dans le bon dossier sans avoir à parcourir toute
+                    l'arborescence afin de se déplacer</p>
+            </div>
+        </div>
+        <div>
+            <h2>Etape finale (<span style="color: red"> <i class="material-icons"
+                        style="color: red; font-size: 53px;vertical-align: middle;">error</i>vitale</span>)
+            </h2>
+            <ol>
+                <li>
+                    <p class="vsc-icon-text">Dans VS Code <img src="assets/img/vscode.png"
+                            style="width: 25px; height: 25px; margin-left: 10px;" alt="icône Visual Studio Code" />
+                    </p>
+                </li>
+                <li>Si le terminal est fermé, en ouvrir un nouveau</li>
+                <li>Copier/coller chaque commande et appuyer sur entrée après chacune d'entre elles :
+                    <ul class="final-steps-list">
+                        <li class="final-steps-step"><code>git add .</code></li>
+                        <li class="final-steps-step"><code>git commit -m "modif img soldes"</code> (ou un autre
+                            message entre les
+                            guillemets)</li>
+                        <li class="final-steps-step"><code>git push -u origin main</code></li>
+                        <p>Pour faire le @, option droite + 9 </p>
+                        <li class="final-steps-step">
+                            <p><code>git status</code> -> Devrait afficher un message "Already up to date" (Déjà à
+                                jour)</p>
+                            <p> ça veut dire que tout s'est bien passé et que le dépôt distant est à jour</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p></p>
+        </div>
+        <div>
+            <h2>Pour Quitter</h2>
+            <p>Quitter la machine virtuelle se fait de la même manière que quitter une fenêtre normale</p>
+            <p>Utiliser Éteindre dans le menu d'Ubuntu (en haut à droite) éteindra la machine</p>
+
+        </div>
+    </main>
+    <footer>
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="assets/js/script.js" defer></script>
+    </footer>
+</body>
+
+</html>
